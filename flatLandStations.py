@@ -9,7 +9,7 @@ def spaceStation(n,c):
         for i in range(1,m):
             gaps.append(c[i]-c[i-1])
 
-        return max(c[0]-0,m-1-c[0],max(gaps)//2)
+        return max(c[0]-0,n-1-c[m-1],max(gaps)//2)
 
 
 print(spaceStation(6,[0]))
